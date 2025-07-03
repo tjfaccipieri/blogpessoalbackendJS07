@@ -29,7 +29,7 @@ export class Postagem {
     onDelete: 'CASCADE',
   })
   tema: Tema;
-  
+
   @ManyToOne(() => Usuario, (usuario) => usuario.postagem, {
     onDelete: 'CASCADE',
   })

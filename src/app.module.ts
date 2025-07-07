@@ -10,7 +10,7 @@ import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot(),
+    ConfigModule.forRoot(),
     TypeOrmModule.forRootAsync({
       useClass: ProdService,
       imports: [ConfigModule],
